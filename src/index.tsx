@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AppRouter } from './router/AppRouter';
+import { ProductsContextProvider } from './store/products.context';
+import './styles/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ProductsContextProvider>
+      <AppRouter/>
+    </ProductsContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

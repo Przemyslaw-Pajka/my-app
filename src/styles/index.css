@@ -1,0 +1,44 @@
+@import "variables.css";
+@import "global.css";
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.root {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.root.fixed::before {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background: var(--main-bg-url) center no-repeat;
+  font-family: var(--font-family-primary);
+  color: var(--font-color-primary);
+}
+  
+
+@media (max-width: 450px) {
+  body {
+    padding: 0px;
+  }
+  .root {
+    background: none;
+  }
+}
+
+
+

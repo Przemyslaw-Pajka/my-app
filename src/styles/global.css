@@ -1,0 +1,15 @@
+.text-alt-color {
+  color: var(--alt-color);
+}
+.text-gray {
+  color: var(--font-color-gray);
+}
+.text-green {
+  color: var(--font-color-green);
+}
+.text-medium-bold {
+  font-weight: 500;
+}
+.text-strong-bold {
+  font-weight: 700;
+}
